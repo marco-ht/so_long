@@ -13,7 +13,6 @@ This repository contains my implementation of the **so_long** project, developed
   - [Game Requirements](#game-requirements)
   - [Graphic Management](#graphic-management)
   - [Map Requirements](#map-requirements)
-- [Bonus Part](#bonus-part)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -25,7 +24,7 @@ This repository contains my implementation of the **so_long** project, developed
 
 ## Overview
 
-**so_long** is a basic 2D game where the player moves a character on a map, collects all the collectibles, and then exits by choosing the shortest possible route. Although the theme provided in the subject shows a dolphin, fish, and the Earth, you can design your game world and choose your own characters, collectibles, and scenery.
+**so_long** is a basic 2D game where the player moves a character on a map, collects all the collectibles, and then exits by choosing the shortest possible route. I chose the design of the game world and chose the character, collectibles, and scenery.
 
 ## Objectives
 
@@ -48,8 +47,8 @@ This repository contains my implementation of the **so_long** project, developed
 - **Program Name:** `so_long`
 - **Goal:** The player's objective is to collect all collectibles and then reach the exit using the shortest route.
 - **Controls:**
-  - Movement must be controlled with **W, A, S, D** (or alternatively with ZQSD or arrow keys).
-  - The game is top-down (or profile view) and non-real-time.
+  - Movement must be controlled with **W, A, S, D**.
+  - The game is top-down view and non-real-time.
   - The current number of moves should be printed in the shell on every movement.
 - **Movement Constraints:** 
   - The player must not be able to move into walls.
@@ -78,16 +77,6 @@ This repository contains my implementation of the **so_long** project, developed
   - The map must be parsed to ensure a valid path exists from the player's position to the exit after collecting all collectibles.
 - **Error Reporting:** If the map does not meet the criteria (e.g., duplicate exits or starting positions, non-rectangular, not enclosed by walls), the program must exit cleanly and return an error message.
 
-## Bonus Part
-
-For additional bonus points, you can implement one or more of the following features:
-- **Enemy Patrol:** Make the player lose when coming into contact with an enemy.
-- **Sprite Animation:** Add basic animation to your sprites.
-- **On-Screen Movement Count:** Display the number of moves directly on screen, rather than printing them to the shell.
-- **Additional Effects or Levels:** Get creative with extra graphical effects or additional gameplay elements.
-
-*Note: Bonus features will only be evaluated if the mandatory part is fully functional and error-free.*
-
 ## Project Structure
 
 ```
@@ -96,8 +85,7 @@ so_long/
 ├── srcs/        # Source files for game logic, event handling, and graphic management
 ├── maps/        # .ber map files used for testing the game
 ├── textures/    # Image files for textures, sprites, etc.
-├── libft/       # (Optional) libft sources and Makefile if used
-├── Makefile     # Makefile with required rules: NAME, all, clean, fclean, re (plus bonus if applicable)
+├── Makefile     # Makefile with required rules: NAME, all, clean, fclean, re
 └── README.md    # This file
 ```
 
@@ -106,13 +94,13 @@ so_long/
 1. **Clone the Repository:**
 
    ```sh
-   git clone https://github.com/yourusername/so_long.git
+   git clone https://github.com/marco-ht/so_long.git
    cd so_long
    ```
 
 2. **Build the Project:**
 
-   Use the provided Makefile to compile your source files:
+   Use the provided Makefile to compile the source files:
 
    ```sh
    make
@@ -125,11 +113,11 @@ so_long/
 Run the game by providing a map file (with a `.ber` extension) as an argument:
 
 ```sh
-./so_long maps/your_map.ber
+./so_long map.ber
 ```
 
 **Controls:**
-- Use W, A, S, D (or your alternative keys) to move.
+- Use W, A, S, D to move.
 - The number of moves is printed to the shell after every move.
 - To exit the game, press ESC or click the window close button.
 
@@ -143,17 +131,6 @@ Run the game by providing a map file (with a `.ber` extension) as an argument:
 
 - **Unexpected Behavior:**
   The program should never crash (i.e., no segmentation faults, bus errors, or double-free issues).
-
-## Submission and Peer Evaluation
-
-- **Submission:**
-  Submit your project to the assigned Git repository. Only the files within this repository will be evaluated.
-
-- **Peer Evaluation:**
-  During defense, you are allowed to use your own tests and/or those developed by your peers to demonstrate the functionality of your game.
-
-- **File Organization:**
-  Make sure that all required files (source files, headers, maps, textures, etc.) are properly named and organized according to the subject guidelines.
 
 ## Acknowledgments
 
