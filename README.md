@@ -36,9 +36,9 @@ This repository contains my implementation of the **so_long** project, developed
 ## Common Instructions
 
 - **Language & Norm:** The project must be written in C and adhere strictly to the Norm.
-- **Allowed Functions:** You may use all functions of the MiniLibX, standard C functions (`open`, `close`, `read`, `write`, `malloc`, `free`, etc.), functions from the math library (`-lm`), and your own version of `ft_printf` (or equivalent).
-- **Makefile Requirements:** Your Makefile must compile your source files using `-Wall`, `-Wextra`, and `-Werror` with `cc`. It should include the rules `NAME`, `all`, `clean`, `fclean`, and `re`. Bonus rules should be added if applicable.
-- **Assets:** You must turn in your map files (with a `.ber` extension), any textures you use, and all required source files.
+- **Allowed Functions:** It's possible to use all functions of the MiniLibX, standard C functions (`open`, `close`, `read`, `write`, `malloc`, `free`, etc.), functions from the math library (`-lm`), and your own version of `ft_printf`.
+- **Makefile Requirements:** The Makefile must compile your source files using `-Wall`, `-Wextra`, and `-Werror` with `cc`. It should include the rules `NAME`, `all`, `clean`, `fclean`, and `re`. Bonus rules should be added if applicable.
+- **Assets:** It's required to turn in the map files you made (with a `.ber` extension), any textures you use, and all required source files.
 
 ## Mandatory Part
 
